@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(148, 38%, 91%);
+    font-family: "Karla", sans-serif;
+}
+
+form{
+    background-color: white;
+    padding: 2em;
+    border-radius: 0.5em;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20vh 10vh 0 10vh;
+}
+
+.campoNome{
+    display: flex;
+}
+
+h1{
+    margin: 0 0 1em 0.3em;
+}
+
+.primeiroNome input, .sobrenome input{
+    width: 100%;
+    height: 2.5em;
+    border: 1px solid lightgray;
+    border-radius: 0.5em;
+    margin-top: 0.5em;
+}
+
+.campoEmail input{
+    width: 100%;
+    height: 2.5em;
+    border: 1px solid lightgray;
+    border-radius: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+
+.primeiroNome{
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.campoDeselecao{
+    width: 100%;
+    display: flex;
+}
+
+.selecao input, .selecao2 input{
+    margin: 0.5em;
+}
+
+.selecao{
+    display: flex;
+    width: 100%;
+    height: 2.5em;
+    border: 1px solid lightgray;
+    border-radius: 0.5em;
+    align-items: center;
+    padding-left: 0.5em;
+    margin: 0.5em 1em 1em 0;
+}
+
+.selecao2{
+    display: flex;
+    width: 100%;
+    height: 2.5em;
+    border: 1px solid lightgray;
+    border-radius: 0.5em;
+    align-items: center;
+    padding-left: 0.5em;
+    margin: 0.5em 0 1em 0;
+}
+
+.campoMensagem input{
+    width: 100%;
+    height: 10em;
+    border: 1px solid lightgray;
+    border-radius: 0.5em;
+    margin: 1em 0 3em 0;
+}
+
+label{
+    font-size: 16px;
+}
+
+.direitos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.acordo{
+    padding: 0.5em;
+}
+
+button{
+    width: 100%;
+    height: 3em;
+    border-radius: 0.5em;
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+    border: none;
+    margin-top: 2em;
+}
+
+.selecao input:hover,  .selecao2 input:hover, .direitos input:hover{
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(187, 24%, 22%);
+    transition: 1s;
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+
+    .primeiroNome{
+        width: 100%;
+    }
+    
+    form{
+        padding: 0.5em;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+
+    .campoNome{
+        display: block;
+    }
+
+    .primeiroNome, .sobrenome{
+        margin-bottom: 1em;
+    }
+
+    .campoDeselecao{
+        display: block;
+    }
+
+    .campoDeselecao label{
+        font-size: 14px;
+    }
+
+    .selecao, .selecao2{
+        padding: 0.3em;
+    }
+
+    .acordo{
+        font-size: 12px;
+    }
+
+}
